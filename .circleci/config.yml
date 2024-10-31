@@ -73,7 +73,6 @@ jobs:
           name: Build da imagem do site
           command: |
             docker build --tag cocktail-menu:${CIRCLE_SHA1:0:7} ./cocktail-menu/
-
   farewell:
     docker:
       - image: cimg/base:stable
